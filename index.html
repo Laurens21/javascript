@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body onload="auto(3)">
+    <section class="slider">
+        <div class="header">
+            <h2 class="bigtext">Welcome, Give me a &lt;br&gt;</h2>
+        </div>
+        <div class="slider-image slider-one fade">
+            <div class="slider-text"><span>1 / 5</span></div>
+        </div>
+        <div class="slider-image slider-two fade">
+            <div class="slider-text"><span>2 / 5</span></div>
+        </div>
+        <div class="slider-image slider-three fade">
+            <div class="slider-text"><span>3 / 5</span></div>
+        </div>
+        <div class="slider-image slider-four fade">
+            <div class="slider-text"><span>4 / 5</span></div>
+        </div>
+        <div class="slider-image slider-five fade">
+            <div class="slider-text"><span>5 / 5</span></div>
+        </div>
+        <div class="fly">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <button class="controls" id="play" onclick="auto(3)"><i class="fas fa-play"></i></button>
+                    <button class="controls" id="pause" onclick="auto(4)"><i class="fas fa-pause"></i></button>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+    <footer class="footer">
+        Made by Laurens Trotsenburg © 2018
+    </footer>
+    <script src="slider.js"></script>
+</body>
+</html>
